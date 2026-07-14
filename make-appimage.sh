@@ -8,7 +8,7 @@ export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/a1fd8b31af06ecfc3a30cf5dcbbc63f570ed1ac8/Papirus/64x64/apps/accessories-calculator.svg
+export ICON=https://raw.githubusercontent.com/mate-desktop/mate-icon-theme/refs/heads/master/mate/256x256/apps/accessories-calculator.png
 export DESKTOP=/usr/share/applications/mate-calc.desktop
 export ALWAYS_SOFTWARE=1 #gtk3 app
 

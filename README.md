@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/MATE-Calculator-AppImage)](https://github.com/pkgforge-dev/MATE-Calculator-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/a1fd8b31af06ecfc3a30cf5dcbbc63f570ed1ac8/Papirus/64x64/apps/accessories-calculator.svg" width="128" />
+  <img src="https://raw.githubusercontent.com/mate-desktop/mate-icon-theme/refs/heads/master/mate/256x256/apps/accessories-calculator.png" width="128" />
 </p>
 
 
@@ -19,7 +19,7 @@
 
 ---
 
-AppImage made using [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
+AppImage made using [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks.
 
 **This AppImage bundles everything and it should work on any Linux distro, including old and musl-based ones.**
 
