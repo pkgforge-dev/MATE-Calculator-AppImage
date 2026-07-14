@@ -3,16 +3,17 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q PACKAGENAME | awk '{print $2; exit}') # example command to get version of application here
+VERSION=$(pacman -Q mate-calc | awk '{print $2; exit}') # example command to get version of application here
 export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=PATH_OR_URL_TO_ICON
-export DESKTOP=PATH_OR_URL_TO_DESKTOP_ENTRY
+export ICON=https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/a1fd8b31af06ecfc3a30cf5dcbbc63f570ed1ac8/Papirus/64x64/apps/accessories-calculator.svg
+export DESKTOP=/usr/share/applications/mate-calc.desktop
+export ALWAYS_SOFTWARE=1 #gtk3 app
 
 # Deploy dependencies
-quick-sharun /PATH/TO/BINARY_AND_LIBRARIES_HERE
+quick-sharun /usr/bin/mate-calc*
 
 # Additional changes can be done in between here
 
